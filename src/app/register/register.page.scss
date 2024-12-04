@@ -1,0 +1,96 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  padding: 1rem;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.register-title {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+ion-item {
+  --highlight-color-focused: #3880ff;
+  --border-color: #ccc;
+  --border-radius: 8px;
+  margin-bottom: 1.2rem;
+}
+
+.register-button {
+  margin-top: 1rem;
+  --background: #3880ff;
+  --border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.login-option {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+
+  .login-button {
+    color: #3880ff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+  }
+}
+
+// Media queries para dispositivos pequeños
+@media (max-width: 768px) {
+  .register-form {
+    padding: 1.5rem;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+
+  ion-item {
+    --border-radius: 6px;
+  }
+
+  .register-button {
+    font-size: 0.9rem;
+  }
+
+  .login-button {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    padding: 1rem;
+  }
+
+  .register-title {
+    font-size: 1.3rem;
+  }
+
+  .register-button {
+    font-size: 0.85rem;
+  }
+
+  .login-button {
+    font-size: 0.8rem;
+  }
+}

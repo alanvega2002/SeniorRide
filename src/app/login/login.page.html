@@ -1,0 +1,46 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      <span class="logo-text">SeniorRide</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-container">
+  <div class="login-form">
+    <h2 class="login-title">Iniciar Sesión</h2>
+
+    <!-- Campo de Usuario -->
+    <ion-item lines="none">
+      <ion-label position="floating">Nombre de Usuario</ion-label>
+      <ion-input [(ngModel)]="username" type="text" required></ion-input>
+    </ion-item>
+
+    <!-- Campo de Contraseña -->
+    <ion-item lines="none">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="password" type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Botón de Iniciar Sesión -->
+    <ion-button expand="block" (click)="login()" class="login-button">Iniciar Sesión</ion-button>
+
+    <!-- Opciones adicionales -->
+    <div class="options">
+      <ion-button fill="clear" routerLink="/recuperar-contrasena" class="option-button">
+        ¿Olvidaste tu contraseña?
+      </ion-button>
+    </div>
+
+    <!-- Enlace para registrarse -->
+    <div class="register-option">
+      <p>¿No tienes una cuenta?</p>
+      <ion-button fill="clear" (click)="register()" class="register-button">
+        Registrarse
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

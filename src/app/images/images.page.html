@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Imágenes de Viajes</ion-title>
+    <!-- Botón de Volver al Inicio -->
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">
+        Volver al Inicio
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1 [style.color]="batteryColor">Bateria: {{ batteryLevel }} %</h1>
+  <ion-button (click)="openCamera()">Abrir la cámara</ion-button>
+  <div *ngIf="imageUrl">
+    <img [src]="imageUrl" alt="Foto desde la cámara">
+  </div>
+
+</ion-content>

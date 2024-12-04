@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      <span class="logo-text">Registrar</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="register-container">
+  <div class="register-form">
+    <h2 class="register-title">Crear una cuenta</h2>
+
+    <!-- Campo de Usuario -->
+    <ion-item lines="none">
+      <ion-label position="floating">Nombre de Usuario</ion-label>
+      <ion-input [(ngModel)]="username" type="text" required></ion-input>
+    </ion-item>
+
+    <!-- Campo de Correo Electrónico -->
+    <ion-item lines="none">
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input [(ngModel)]="email" type="email" required></ion-input>
+    </ion-item>
+
+    <!-- Campo de Contraseña -->
+    <ion-item lines="none">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="password" type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Botón de Registrarse -->
+    <ion-button expand="block" (click)="register()" class="register-button">Registrar</ion-button>
+
+    <!-- Botón para volver al Login -->
+    <div class="login-option">
+      <p>¿Ya tienes una cuenta?</p>
+      <ion-button fill="clear" routerLink="/login" class="login-button">
+        Iniciar Sesión
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

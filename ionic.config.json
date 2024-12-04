@@ -1,0 +1,7 @@
+{
+  "name": "SeniorRide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

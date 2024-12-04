@@ -1,0 +1,109 @@
+ion-button {
+    margin: 16px;
+    padding: 12px;
+    --background: linear-gradient(45deg, #ff7b00, #ffae00); /* Gradiente futurista */
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    --border-radius: 12px;
+    --color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  /* Botón de "Volver al Inicio" */
+  ion-buttons ion-button {
+    --background: transparent; /* Fondo transparente */
+    --color: white; /* Color blanco para el texto */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 12px;
+  
+    &:hover {
+      text-decoration: underline; /* Subrayado en hover */
+    }
+  }
+  
+  /* Estilo de la lista de imágenes */
+  ion-list {
+    padding: 16px;
+    background: #f5f5f5; /* Fondo claro para contraste */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo de cada ítem en la lista */
+  ion-item {
+    margin-bottom: 12px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  /* Estilo de las miniaturas de las imágenes */
+  ion-thumbnail {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+  
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  /* Estilo de las etiquetas de texto */
+  ion-label {
+    margin-left: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  ion-label h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 4px;
+  }
+  
+  ion-label p {
+    font-size: 14px;
+    color: #777777;
+  }
+  
+  /* Estilo para pantallas grandes (responsivo) */
+  @media (min-width: 768px) {
+    ion-button {
+      font-size: 18px;
+      padding: 14px;
+    }
+  
+    ion-thumbnail {
+      width: 100px;
+      height: 100px;
+    }
+  
+    ion-label h2 {
+      font-size: 20px;
+    }
+  
+    ion-label p {
+      font-size: 16px;
+    }
+  }
+  

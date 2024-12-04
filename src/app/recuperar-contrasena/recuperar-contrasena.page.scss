@@ -1,0 +1,42 @@
+.recover-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    padding: 1rem;
+  }
+  
+  .recover-form {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .recover-title {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  ion-item {
+    --highlight-color-focused: #3880ff;
+    --border-color: #ccc;
+    --border-radius: 8px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .recover-button {
+    margin-top: 1rem;
+    --background: #3880ff;
+    --border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  

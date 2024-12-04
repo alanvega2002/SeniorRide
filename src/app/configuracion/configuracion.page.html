@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ 'CONFIGURATION' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label>{{ 'NOTIFICATIONS' | translate }}</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ 'DARK_MODE' | translate }}</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{ 'SELECT_LANGUAGE' | translate }}</ion-label>
+      <ion-select [(ngModel)]="selectedLanguage" (ionChange)="cambiarIdioma($event.detail.value)">
+        <ion-select-option value="en">{{ 'ENGLISH' | translate }}</ion-select-option>
+        <ion-select-option value="es">{{ 'SPANISH' | translate }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+

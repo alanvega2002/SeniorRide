@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="header-toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-button"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      <span class="logo-text">SeniorRide</span>
+    </ion-title>
+    <!-- Botón de Cerrar Sesión -->
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()" color="danger">
+        Cerrar Sesión
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="home-container">
+    <!-- Overlay para mejorar la legibilidad -->
+    <div class="background-overlay"></div>
+    
+    <!-- Sección de bienvenida -->
+    <div class="welcome-section">
+      <h1 class="main-title">{{ 'WELCOME_TITLE' | translate }}</h1>
+      <p class="subtitle">{{ 'WELCOME_SUBTITLE' | translate }}</p>
+    </div>
+
+    <!-- Contenedor de tarjetas de menú -->
+    <div class="menu-container">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12" size-sm="6" size-md="4" *ngFor="let option of menuOptions">
+            <ion-card (click)="navigate(option.route)" class="menu-card">
+              <div class="card-content">
+                <div class="icon-container">
+                  <ion-icon [name]="option.icon"></ion-icon>
+                </div>
+                <div class="text-container">
+                  <h2>{{ option.title | translate }}</h2>
+                  <p *ngIf="option.description">{{ option.description | translate }}</p>
+                </div>
+              </div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

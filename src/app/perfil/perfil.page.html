@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Mi Perfil</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ message }}</p>
+      <ion-list>
+        <ion-card *ngFor="let user of users">
+          <ion-card-header>
+            <ion-card-title>{{ user.name.first }} {{ user.name.last }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img [src]="user.picture.thumbnail" alt="{{ user.name.first }}">
+              </ion-thumbnail>
+              <ion-label>
+                <p>Email: {{ user.email }}</p>
+                <p>Teléfono: {{ user.phone }}</p>
+              </ion-label>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

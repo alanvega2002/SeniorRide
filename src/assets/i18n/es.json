@@ -1,0 +1,21 @@
+{
+  "APP_NAME": "SeniorRide",
+  "WELCOME_TITLE": "Bienvenido a SeniorRide",
+  "WELCOME_SUBTITLE": "Tu servicio de transporte de confianza",
+  "MENU_PROFILE": "Perfil",
+  "MENU_HISTORY": "Historial de Viajes",
+  "MENU_REQUEST_RIDE": "Solicitar Viaje",
+  "MENU_SETTINGS": "Configuración",
+  "MENU_HELP": "Ayuda",
+  "MENU_SCHEDULE_RIDE": "Agendar Viaje",
+  "Notificaciones": "Notificaciones",
+  "Modo Oscuro": "Modo Oscuro",
+  "Seleccionar Lenguaje": "Seleccionar Lenguaje",
+  "Ingles": "Inglés",
+  "Español": "Español",
+  "MENU_PROFILE_DESCRIPTION": "Aquí puedes ver y editar tu perfil.",
+  "MENU_HISTORY_DESCRIPTION": "Consulta el historial de tus viajes.",
+  "MENU_REQUEST_RIDE_DESCRIPTION": "Solicita un viaje rápidamente.",
+  "MENU_SETTINGS_DESCRIPTION": "Configura tus preferencias de usuario."
+  }
+  
